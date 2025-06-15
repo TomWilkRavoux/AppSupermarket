@@ -9,11 +9,7 @@ class PersoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perso)
 
-        val name = intent.getStringExtra("name") ?: "Nom inconnu"
-        val email = intent.getStringExtra("email") ?: "email inconnu"
 
-        findViewById<TextView>(R.id.userName).text = name
-        findViewById<TextView>(R.id.emailText).text = email
     }
 
 }
