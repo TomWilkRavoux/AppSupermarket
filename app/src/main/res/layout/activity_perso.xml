@@ -32,7 +32,7 @@
             android:id="@+id/emailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="email"
+            android:text="tom.willkravoux@ecoles-epsi.net"
             android:textSize="16sp"
             android:layout_marginBottom="12dp" />
 
@@ -40,7 +40,7 @@
             android:id="@+id/epsiLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="tom.willkravoux@ecoles-epsi.net"
+            android:text="https://www.epsi.fr/"
             android:autoLink="web"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="16sp" />
