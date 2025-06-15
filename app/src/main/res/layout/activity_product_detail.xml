@@ -31,7 +31,6 @@
             android:contentDescription="Image du produit"
             android:layout_marginBottom="16dp" />
 
-        <!-- ✅ Nom du produit -->
         <TextView
             android:id="@+id/productNameDetail"
             android:layout_width="match_parent"
@@ -42,7 +41,6 @@
             android:textSize="16sp"
             android:layout_marginBottom="12dp" />
 
-        <!-- ✅ Description -->
         <TextView
             android:id="@+id/productDescDetail"
             android:layout_width="match_parent"

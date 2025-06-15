@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- ✅ Titre de la catégorie -->
     <TextView
         android:id="@+id/categoryTitle"
         android:layout_width="match_parent"
@@ -16,7 +15,6 @@
         android:gravity="center"
         android:layout_marginBottom="16dp" />
 
-    <!-- ✅ Liste des produits -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewProducts"
         android:layout_width="match_parent"

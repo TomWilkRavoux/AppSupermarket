@@ -7,4 +7,6 @@
     <string name="title_activity_perso">PersoActivity</string>
     <string name="title_activity_product_list">ProductListActivity</string>
     <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="title_activity_student_list">StudentListActivity</string>
+    <string name="title_activity_perso_two">PersoTwoActivity</string>
 </resources>

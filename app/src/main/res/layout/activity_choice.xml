@@ -15,7 +15,6 @@
         android:paddingTop="32dp"
         android:gravity="center" />
 
-    <!-- ✅ Boutons centrés dans l'écran -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -11,10 +11,13 @@ class ChoiceActivity : AppCompatActivity() {
         setContentView(R.layout.activity_choice)
 
         val btnPerso = findViewById<Button>(R.id.btnPerso)
+        btnPerso.setOnClickListener {
+            startActivity(Intent(this, StudentListActivity::class.java))
+        }
         val btnProduct = findViewById<Button>(R.id.btnProduct)
 
         btnPerso.setOnClickListener {
-            startActivity(Intent(this, PersoActivity::class.java))
+            startActivity(Intent(this, StudentListActivity::class.java))
         }
 
         btnProduct.setOnClickListener {
