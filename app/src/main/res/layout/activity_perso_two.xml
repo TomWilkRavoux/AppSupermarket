@@ -8,18 +8,35 @@
 
     <TextView
         android:id="@+id/userName2"
-        android:text="Nom"
+        android:text="PIERRE Alexandre"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="530dp"
+        android:layout_height="381dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Avatar"
+        android:src="@drawable/cmoiwesh" />
+
     <TextView
         android:id="@+id/emailText2"
-        android:text="email"
+        android:text="alexandre.pierre2@ecoles-epsi.net"
         android:textSize="16sp"
         android:layout_marginBottom="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/epsiLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.epsi.fr/"
+        android:autoLink="web"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
 </LinearLayout>
