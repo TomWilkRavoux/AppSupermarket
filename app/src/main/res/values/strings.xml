@@ -3,4 +3,6 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_categorie">Categorie</string>
     <string name="title_activity_category_adapter">CategoryAdapter</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="title_activity_perso">PersoActivity</string>
 </resources>

@@ -6,7 +6,6 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.testv.MainActivity
 import com.example.testv.R
 
 class SplashActivity : AppCompatActivity() {
@@ -17,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
         Toast.makeText(this, "Splash lancé", Toast.LENGTH_SHORT).show()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, ChoiceActivity::class.java))
             finish()
         }, 2000)
     }

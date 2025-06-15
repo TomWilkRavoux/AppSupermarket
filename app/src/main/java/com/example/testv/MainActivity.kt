@@ -19,8 +19,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("TEST", "MainActivity démarre")
         setContentView(R.layout.activity_main)
 
+        Log.d("TEST", "Avant findViewById")
         recyclerView = findViewById(R.id.recyclerViewCategories)
         adapter = CategoryAdapter(categories)
         recyclerView.layoutManager = LinearLayoutManager(this)
