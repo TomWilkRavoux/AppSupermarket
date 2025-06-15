@@ -1,10 +1,12 @@
 package com.example.testv.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.testv.ProductListActivity
 import com.example.testv.R
 import com.example.testv.model.Category
 
@@ -22,7 +24,15 @@ class CategoryAdapter(private val categories: List<Category>) :
     }
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
-        holder.title.text = categories[position].title
+        val category = categories[position]
+        holder.title.text = category.title
+
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, ProductListActivity::class.java)
+            intent.putExtra("products_url", category.productsUrl)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount() = categories.size

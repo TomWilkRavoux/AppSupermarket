@@ -5,4 +5,5 @@
     <string name="title_activity_category_adapter">CategoryAdapter</string>
     <string name="title_activity_choose">ChooseActivity</string>
     <string name="title_activity_perso">PersoActivity</string>
+    <string name="title_activity_product_list">ProductListActivity</string>
 </resources>
