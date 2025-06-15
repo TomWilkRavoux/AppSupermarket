@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnPerso"
-        android:layout_width="wrap_content"
+    <!-- ✅ Titre fixé en haut -->
+    <TextView
+        android:id="@+id/titreChoice"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Perso"
-        android:layout_marginBottom="16dp" />
+        android:text="EPSI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="32dp"
+        android:gravity="center" />
 
-    <Button
-        android:id="@+id/btnProduct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Product" />
-</LinearLayout>
+    <!-- ✅ Boutons centrés dans l'écran -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnPerso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perso"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product" />
+    </LinearLayout>
+</FrameLayout>

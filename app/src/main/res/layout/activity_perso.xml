@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Écran Perso"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-</FrameLayout>
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- ✅ Nom en haut -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wilk--Ravoux Tom"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ✅ Avatar -->
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="530dp"
+            android:layout_height="381dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Avatar"
+            android:src="@drawable/img_p" />
+
+        <!-- ✅ Email -->
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- ✅ Lien EPSI -->
+        <TextView
+            android:id="@+id/epsiLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tom.willkravoux@ecoles-epsi.net"
+            android:autoLink="web"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

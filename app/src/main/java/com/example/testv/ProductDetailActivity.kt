@@ -15,15 +15,12 @@ class ProductDetailActivity : AppCompatActivity() {
         val description = intent.getStringExtra("description")
         val imageUrl = intent.getStringExtra("image")
 
-        val imageView = findViewById<ImageView>(R.id.productImageDetail)
-        val nameView = findViewById<TextView>(R.id.productNameDetail)
-        val descView = findViewById<TextView>(R.id.productDescDetail)
-
-        nameView.text = name
-        descView.text = description
+        findViewById<TextView>(R.id.headerTitle).text = name
+        findViewById<TextView>(R.id.productNameDetail).text = name
+        findViewById<TextView>(R.id.productDescDetail).text = description
 
         Glide.with(this)
             .load(imageUrl)
-            .into(imageView)
+            .into(findViewById(R.id.productImageDetail))
     }
 }
